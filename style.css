@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+body {
+    font-family: 'Outfit', sans-serif;
+    background: hsl(217, 54%, 11%);
+    font-size: 18px;
+}
+.container {
+    width: 100%;
+    height: 100%;
+}
+.card {
+    position: relative;
+    margin: 80px auto;
+    width: 25%;
+    height: auto;
+    padding: 25px;
+    background: hsl(216, 50%, 16%);
+    border-radius: 10px;
+}
+.card h2{
+    margin-top: 15px;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 15px;
+}
+.card h2:hover{
+    transition: 0.3s ease-in-out;
+    color: hsl(178, 100%, 50%);
+}
+.card p {
+    text-align: left;
+    margin-bottom: 15px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 100;
+}
+.card .main-image {
+    position: relative;
+}
+.card .main-image div {
+    position: absolute;
+    top: 0;
+    background-color: hsl(178, 100%, 50%, 60%);
+    width: 100%;
+    height: calc(100% - 4px);
+    z-index: 999;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.card .main-image div:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.container .main-image div img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 15%;
+    transform: translate(-50%, -50%);
+}
+.eth {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.eth .price {
+    font-weight: 600;
+    color:hsl(178, 100%, 50%);
+}
+.eth .day {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+svg {
+    margin-right: 5px;
+}
+hr {
+    border: 1px solid hsl(215, 32%, 27%);
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 6%;
+    margin-top: 15px;
+    margin-bottom: -10px;
+    color: hsl(0, 0%, 100%);
+}
+.footer p{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+.footer span{
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+}
+.footer span:hover{
+    transition: 0.3s ease-in-out;
+    color: hsl(178, 100%, 50%);
+}
+.footer img {
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 20px;
+    width: 35px;    
+    height: 35px;
+    margin-top: -11px;
+}
+@media (max-width: 375px) {
+    .container {
+        padding: 20px;
+    }
+    .card {
+        margin: 0 auto;
+        width: 100%;  
+        height: 100%;
+    }
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
